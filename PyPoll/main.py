@@ -50,7 +50,7 @@ with open(csvfilepath,mode='r',encoding='UTF-8') as csv_file:
     print(f"Total Votes {total_vote_count}")
     print("-----------------------")
     for i, k in candidate_dict.items():
-        print(f"{i} {k} {round(float(k/total_vote_count),2)*100}")
+        print(f"{i} {k} {round((k/total_vote_count),5)*100}%")
     print("-----------------------")
     print(f"Winner: {winner}")
     print("-----------------------")
